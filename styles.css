@@ -1,0 +1,187 @@
+:root {
+  /* Colors */
+  --cl-sky-blue: #66e2dc;
+  --cl-outrageous-orange: #fa7453;
+  --cl-rajah: #ffb964;
+  --cl-snow: #fcfaf9;
+  --cl-eerie-black: #191826;
+  /* Typography */
+  --IBM-bold: 700;
+  --IBM-regular: 400;
+  --h1-size: 5.5rem;
+  --h1-line: 5.5rem;
+  --h1-spacing: -0.0625rem;
+  --h2-size: 2.5rem;
+  --h2-line: 3.25rem;
+  --body1-size: 1.25rem;
+  --body1-line: 2.125rem;
+  --body2-size: 1rem;
+  --body2-line: 1.625rem;
+}
+
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+a,
+img,
+span {
+  display: block;
+}
+
+/* Mobile styles */
+body {
+  background-color: var(--cl-snow);
+  background-image: url("./assets/imgs/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0px -249px;
+}
+.container {
+  min-width: calc((320 / 16) * 1rem);
+  max-width: calc((375 / 16) * 1rem);
+  margin-top: calc((40 / 16) * 1rem);
+  margin-bottom: calc((80 / 16) * 1rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding-left: calc((24 / 16) * 1rem);
+}
+
+main {
+  margin-top: calc((64 / 16) * 1rem);
+  margin-bottom: calc((390 / 16) * 1rem);
+}
+.section-info {
+  padding: 0 calc((24 / 16) * 1rem);
+}
+.section-info h1 {
+  margin: 0;
+  color: var(--cl-eerie-black);
+  font-size: var(--h2-size);
+  font-weight: var(--IBM-bold);
+  line-height: calc((48 / 16) * 1rem);
+  letter-spacing: calc((-0.455 / 16) * 1rem);
+}
+.section-info p {
+  margin-top: calc((20 / 16) * 1rem);
+  color: var(--cl-eerie-black);
+  font-size: var(--body2-size);
+  font-weight: var(--IBM-regular);
+  line-height: var(--body2-line);
+}
+
+.section-premium {
+  margin-top: calc((166 / 16) * 1rem);
+  min-width: 100%;
+  max-height: calc((600 / 16) * 1rem);
+  background-color: var(--cl-eerie-black);
+  border-radius: 12px;
+  background-image: url("./assets/icons/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-size: calc((280 / 16) * 1rem) calc((420 / 16) * 1rem);
+  background-position: top, center;
+}
+.section-premium > img {
+  width: calc((208 / 16) * 1rem);
+  margin: 0 auto;
+  position: relative;
+  top: -98px;
+}
+.section-premium div {
+  background-color: var(--cl-outrageous-orange);
+  border-radius: 12px;
+  padding: calc((48 / 16) * 1rem) 36px;
+  position: relative;
+  top: -46px;
+}
+.section-premium h2 {
+  color: var(--cl-snow);
+  font-size: calc((32 / 16) * 1rem);
+  font-weight: var(--IBM-bold);
+  line-height: calc((40 / 16) * 1rem);
+}
+.section-premium p {
+  margin-top: calc((12 / 16) * 1rem);
+  color: var(--cl-snow);
+  font-size: calc((18 / 16) * 1rem);
+  font-weight: var(--IBM-regular);
+  line-height: calc((28 / 16) * 1rem);
+}
+.section-premium p:nth-child(3) {
+  margin-top: calc((45 / 16) * 1rem);
+  margin-bottom: calc((43 / 16) * 1rem);
+  display: flex;
+  gap: calc((16 / 16) * 1rem);
+  max-height: calc((52 / 16) * 1rem);
+}
+.section-premium span {
+  font-size: calc((65 / 16) * 1rem);
+  font-weight: var(--IBM-bold);
+  line-height: var(--body2-line);
+}
+.section-premium__ios,
+.section-premium__android {
+  height: calc((61 / 16) * 1rem);
+  border-radius: 12px;
+  font-size: calc((18 / 16) * 1rem);
+  font-weight: var(--IBM-bold);
+  line-height: calc((32 / 16) * 1rem);
+  letter-spacing: calc((-0.18 / 16) * 1rem);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc((8 / 16) * 1rem);
+}
+.section-premium__ios img,
+.section-premium__android img {
+  width: calc((17 / 16) * 1rem);
+}
+.section-premium__ios {
+  background-color: var(--cl-eerie-black);
+  color: var(--cl-snow);
+  margin-bottom: calc((16 / 16) * 1rem);
+}
+.section-premium__ios:hover {
+  background-color: var(--cl-sky-blue);
+}
+.section-premium__android {
+  background-color: var(--cl-snow);
+  color: var(--cl-eerie-black);
+}
+.section-premium__android:hover {
+  background-color: var(--cl-rajah);
+}
+
+footer {
+  padding: 0 calc((24 / 16) * 1rem);
+}
+footer p {
+  margin-top: calc((32 / 16) * 1rem);
+  margin-bottom: calc((64 / 16) * 1rem);
+  color: var(--cl-eerie-black);
+  font-size: var(--body2-size);
+  font-weight: var(--IBM-regular);
+  line-height: var(--body2-line);
+  letter-spacing: calc((0.7 / 16) * 1rem);
+}
+footer span {
+  font-weight: var(--IBM-bold);
+}
+footer div {
+  max-width: calc((100 / 16) * 1rem);
+  display: flex;
+  justify-content: space-between;
+}
+footer img:hover {
+  filter: invert(61%) sepia(21%) saturate(4549%) hue-rotate(326deg) brightness(101%) contrast(97%);
+}
