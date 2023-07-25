@@ -254,7 +254,7 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  footer img {
+  footer > img {
     grid-column: 1 /3;
   }
   .footer-copyright {
@@ -295,5 +295,90 @@ footer {
     position: absolute;
     top: 150px;
     left: 239px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1120px) {
+  body {
+    background-image: url("./assets/imgs/bg-main-desktop.png");
+    background-position: 65% 125%;
+  }
+  .container {
+    max-width: calc((1100 / 16) * 1rem);
+    margin-bottom: calc((91 / 16) * 1rem);
+  }
+  .header-pattern {
+    width: calc((312 / 16) * 1rem);
+    height: calc((468 / 16 * 1rem));
+    right: -162px;
+    top: -94px;
+  }
+
+  main {
+    margin-top: calc((127 / 16) * 1rem);
+    margin-bottom: calc((202 / 16) * 1rem);
+  }
+
+  .section-info h1 {
+    max-width: calc((1015 / 16) * 1rem);
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
+    letter-spacing: var(--h1-spacing);
+  }
+  .section-info p {
+    max-width: calc((825 / 16) * 1rem);
+    margin-top: calc((40 / 16) * 1rem);
+    font-size: var(--body1-size);
+    line-height: var(--body1-line);
+  }
+
+  .section-premium {
+    margin-top: calc((321 / 16) * 1rem);
+    background-size: calc((312 / 16) * 1rem) calc((468 / 16) * 1rem);
+    background-position: 42.5% -35%;
+  }
+  .section-premium > img {
+    width: calc((312 / 16) * 1rem);
+    top: -213px;
+    left: 102px;
+  }
+  .section-premium div {
+    max-width: calc((446 / 16) * 1rem);
+    padding-top: calc((58 / 16) * 1rem);
+    padding-bottom: calc((48 / 16) * 1rem);
+    padding-right: 59px;
+    padding-left: 54px;
+    top: 90px;
+    left: 569px;
+  }
+  .section-premium h2 {
+    font-size: var(--h2-size);
+    line-height: var(--h2-size);
+  }
+  .section-premium p {
+    margin-top: calc((25 / 16) * 1rem);
+    font-size: var(--body1-size);
+    line-height: var(--body1-line);
+  }
+  .section-premium p:nth-child(3) {
+    margin-top: calc((48 / 16) * 1rem);
+    margin-bottom: calc((57 / 16) * 1rem);
+  }
+  .section-premium span {
+    line-height: var(--body1-line);
+  }
+
+  footer {
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+  }
+  footer > img {
+    grid-column: auto;
+    margin-right: calc((138 / 16) * 1rem);
+    align-self: start;
+  }
+  .footer-copyright {
+    margin-right: calc((359 / 16) * 1rem);
   }
 }
